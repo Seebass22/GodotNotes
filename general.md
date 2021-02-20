@@ -1,6 +1,6 @@
 ## things to know
 - Y coordinates are weird. Up is negative and down is positive
-- rendering order is bottom to top
+- rendering order is bottom to top (higher up at front, lower down behind)
 - use set_deferred() when disabling collision shapes to avoid crashes
 - hold shift to contrain to axis while moving
 
