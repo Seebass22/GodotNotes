@@ -57,7 +57,7 @@ yield(get_tree().create_timer(5.0), "timeout")
 ```
 
 ## random numbers
-`Randomize()` randomize seed
+`randomize()` randomize seed
 
 `randi()` return random uint32
 
@@ -77,11 +77,6 @@ print("I have this many coins: ", coins)
 `export` keyword
 ```gdscript
 const FLOOR_NORMAL: = Vector2.UP
-```
-
-## switch scene
-```gdscript
-get_tree().change_scene("scene_path")
 ```
 
 ## get a node (only immediate children)
@@ -114,6 +109,25 @@ onready var _dialogText: Label = get_node(_dialogTextPath)
 export (NodePath) onready var _dialogText = get_node(_dialogText) as Label
 ```
 
+## format strings
+```gdscript
+var score_text = "score: %d / %d points" % [score, max_score]
+```
+
+## switch scene
+```gdscript
+get_tree().change_scene("scene_path")
+```
+
+## check OS (build)
+```gdscript
+if OS.get_name() == "HTML5":
+```
+
+## quit
+```gdscript
+get_tree().quit()
+```
 
 # General tips
 - you can run event functions manually
