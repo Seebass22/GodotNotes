@@ -135,3 +135,14 @@ get_tree().quit()
 ```gdscript
 _ready()
 ```
+
+## instantiate scene
+```
+const Bullet = preload("res://Bullet.tscn")
+
+var bullet = Bullet.instance()
+# add to parent
+get_parent().add_child(bullet)
+# or add as child of current node
+add_child(bullet)
+```

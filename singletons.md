@@ -1,0 +1,3 @@
+- create GameEvents singleton
+- enable autoload
+- use GameEvents' signals
