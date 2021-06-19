@@ -136,8 +136,18 @@ get_tree().quit()
 _ready()
 ```
 
-## instantiate scene
+# suppress warnings
+```gdscript
+# prepend an underscore to ignore unused variables
+func _physics_procss(_delta):
+	pass
+
+var _err = move_and_slide_with_snap(velocity, snapVector, Vector2.UP, true, 20, 0.785398, false);
+
 ```
+
+## instantiate scene
+```gdscript
 const Bullet = preload("res://Bullet.tscn")
 
 var bullet = Bullet.instance()
